@@ -15,6 +15,28 @@ h4 {
     font-family: 'Roboto Slab', serif;
 }
 
+h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 2.8rem;
+    font-weight: 200;
+}
+
 .header__redes .fab::before,
 .footer__redes .fab::before {
     font-size: 4rem;
@@ -48,3 +70,264 @@ h4 {
 .navbar-toggler {
     font-size: 2.6rem;
 }
+
+.offcanvas {
+    --bs-offcanvas-width: 200px;
+}
+
+.header__logo a, .footer__logo a {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    display: block;
+    /* margin-top: 3.6rem; */
+    text-align: center;
+}
+
+.slogan {
+    font-weight: 900;
+    word-spacing: .5rem;
+}
+
+.contactanos {
+    min-height: 50rem;
+    background-image: url(https://cyberdietoterapia.com/images/background01.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.trans {
+    background-color: rgba(255, 255, 255, 0.35);
+    padding-bottom: 1.4rem;
+}
+
+.btn {
+    --bs-btn-font-size: 2.4rem;
+    display: block;
+    max-width: 300px;
+    margin: 4rem auto;
+}
+
+.btn:hover {
+    background-color: rgb(188, 209, 228);
+    color: rgb(12, 58, 104);
+    font-weight: 900;
+}
+
+.image img {
+    max-height: 795px;
+}
+
+.fases {
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 992px) {
+    .fases article {
+        position: relative;
+    }
+
+    .fases .rows {
+        text-align: right;
+        padding-right: 4rem;
+        border-right: 1px solid rgb(12, 58, 104);
+    }
+
+    .fases .rows:after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        right: -10px;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: #179cf0;
+        z-index: 50;
+    }
+
+    .fases .rows-reverse {
+        justify-self: end;
+        padding-left: 4rem;
+        border-left: 1px solid rgb(12, 58, 104);
+    }
+
+    .fases .rows-reverse:before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -10px;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: #179cf0;
+        z-index: 50;
+    }
+
+    .fases .image {
+        background-image: url(https://cyberdietoterapia.com/images/img02.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .fases .image img {
+        display: none;
+    }
+}
+
+.faqs {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Acordeon */
+.acordeon {
+    text-align: left;
+}
+
+p, .acordeon__item i:before, .acordeon__item i:after {
+    transition: all 0.3s;
+}
+
+.faqs h2 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+    color: #000;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.faqs .acordeon__item-title,
+.cronology .acordeon__item-title {
+    font-size: 2rem;
+    line-height: 3.4rem;
+    text-align: left;
+    padding: 15px 30px 0 15px;
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.faqs .acordeon__item-content,
+.cronology .acordeon__item-content {
+    color: #333;
+    text-align: left;
+    font-size: 1.8rem;
+    line-height: 1.45;
+    position: relative;
+    overflow: hidden;
+    max-height: 250px;
+    will-change: max-height;
+    contain: layout;
+    display: inline-block;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 5rem 0 1.5rem;
+    transition: .3s opacity, .6s max-height;
+    hyphens: auto;
+    z-index: 2;
+}
+
+.faqs .acordeon,
+.cronology .acordeon {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.faqs .acordeon__item,
+.cronology .acordeon__item {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    /*padding-bottom: 4px;*/
+    /*padding-top: 18px;*/
+    /* background: #fff; */
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.1);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.faqs .acordeon__item + li,
+.cronology .acordeon__item + li {
+    margin-top: 15px;
+}
+
+.faqs .acordeon__item:last-of-type,
+.cronology .acordeon__item:last-of-type {
+    padding-bottom: 0;
+}
+
+.faqs .acordeon__item i,
+.cronology .acordeon__item i {
+    position: absolute;
+    transform: translate(-2px, 0);
+    margin-top: 28px;
+    right: 15px;
+}
+
+.faqs .acordeon__item i:before, 
+.faqs .acordeon__item i:after,
+.cronology .acordeon__item i:before,
+.cronology .acordeon__item i:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 9px;
+}
+
+.faqs .acordeon__item i:before,
+.cronology .acordeon__item i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+.faqs .acordeon__item i:after,
+.cronology .acordeon__item i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+.faqs .acordeon__item input[type=checkbox],
+.cronology .acordeon__item input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    touch-action: manipulation;
+}
+
+.faqs .acordeon__item input[type=checkbox]:checked ~ .acordeon__item-title,
+.cronology .acordeon__item input[type=checkbox]:checked ~ .acordeon__item-title {
+    color: #000;
+}
+
+.faqs .acordeon__item input[type=checkbox]:checked ~ .acordeon__item-content,
+.cronology .acordeon__item input[type=checkbox]:checked ~ .acordeon__item-content {
+    /*margin-top: 0;*/
+    max-height: 0;
+    transition: .3s;
+    opacity: 0;
+    /*transform: translate(0, 50%);*/
+}
+
+.faqs .acordeon__item input[type=checkbox]:checked ~ i:before,
+.cronology .acordeon__item input[type=checkbox]:checked ~ i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+.faqs .acordeon__item input[type=checkbox]:checked ~ i:after,
+.cronology .acordeon__item input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+/* Fin Acordeon */
