@@ -71,7 +71,11 @@ h4 {
 
 .navbar-toggler {
     font-size: 2.6rem;
+    z-index: 9999;
+    position: fixed;
+    border: 2px solid #000000;
 }
+
 
 .offcanvas {
     --bs-offcanvas-width: 200px;
@@ -182,7 +186,14 @@ h4 {
         background-size: cover;
     }
 
-    .fases .image img {
+    .razones .image {
+        background-image: url(https://cyberdietoterapia.com/images/img01.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .fases .image img,
+    .razones .image img {
         display: none;
     }
 }
