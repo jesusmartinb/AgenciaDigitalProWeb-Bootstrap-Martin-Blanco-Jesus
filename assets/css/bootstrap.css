@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -485,3 +489,305 @@ p, .acordeon__item i:before, .acordeon__item i:after {
 		background-position: 0 50%
 	}
 }
+
+/* Página agencia.html */
+.hero {
+    min-height: 50rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#sobre .hero {
+    background-image: url(https://cyberdietoterapia.com/images/background-nosotros.jpg);
+}
+
+#equipo .hero {
+    background-image: url(https://cyberdietoterapia.com/images/background-equipo.jpg);
+}
+
+@media screen and (min-width: 992px) {
+    .cronology {
+        min-width: 768px;
+    }
+
+    .cards-compromisos {
+        column-gap: 4rem;
+    }
+
+    .quieres-trabajar {
+        padding-right: 20%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .cards-compromisos {
+        column-gap: 8rem;
+    }
+
+    .quieres-trabajar {
+        padding-right: 30%;
+        flex-shrink: 1.5;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .history {
+        padding-right: 31rem;
+        border-right: 2px solid rgb(12, 58, 104);
+        margin-right: 29rem;
+    }
+
+    .cronology {
+        min-width: 1024px;
+    }
+
+    .cards-compromisos {
+        column-gap: 12rem;
+    }
+
+    .quieres-trabajar {
+        padding-right: 10%;
+        border-right: 2px solid rgb(12, 58, 104);
+        margin-right: 20%;
+    }
+}
+
+/* Cards equipo */
+.card {
+    width: 310px;
+    min-height: 570px;
+    overflow: hidden;
+}
+
+.card img {
+    height: 310px;
+}
+
+.card p {
+    margin: 1rem 0;
+}
+
+.card .cargo {
+    font-variant: small-caps;
+}
+
+.citation {
+    font-style: italic;
+}
+/* Fin Cards Equipo */
+
+/* Animación slider cards-equipo y cards-testimonios*/
+.cards-equipo {
+    width: 310px;
+    height: auto;
+    margin: 10px auto 0;
+    overflow: hidden;
+}
+
+.cards-equipo ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 30s infinite alternate ease-in-out;
+}
+
+/* .cards-testimonios ul {
+    display: flex;
+	padding: 0;
+	width: 300%;
+	
+	animation: slide2 36s infinite alternate ease-in-out;
+} */
+
+.cards-equipo li {
+	width: 100%;
+	list-style: none;
+}
+
+.cards-equipo .card {
+	width: 100%;
+}
+
+/* @keyframes slide4 {
+	0% {margin-left: 0;}
+	30% {margin-left: 0;}
+	
+	33% {margin-left: -50%;}
+	63% {margin-left: -50%;}
+	
+	66% {margin-left: 0%;}
+	100% {margin-left: 0%;}
+} */
+
+@keyframes slide3 {
+	0% {margin-left: 0;}
+	30% {margin-left: 0;}
+	
+	33% {margin-left: -50%;}
+	63% {margin-left: -50%;}
+	
+	66% {margin-left: -100%;}
+	100% {margin-left: -100%;}
+}
+
+/* @keyframes slide2 {
+	0% {margin-left: 0;}
+	30% {margin-left: 0;}
+	
+	33% {margin-left: -100%;}
+	63% {margin-left: -100%;}
+	
+	66% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+} */
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+@media screen and (min-width: 1024px) {
+    .cards-equipo {
+        width: 650px;
+    }
+
+    .cards-equipo li {
+        width: 50%;
+    }
+
+    .cards-equipo .card {
+        width: 90%;
+    }
+
+    .cards-equipo ul {
+        width: 200%;
+        animation: slide3 30s infinite alternate ease-in-out;
+    }
+
+    /* .cards-testimonios ul {
+        width: 150%;        
+        animation: slide4 36s infinite alternate ease-in-out;
+    } */
+
+    .card-content {
+        min-height: 30rem;
+    }
+}
+/* Fin Animación slider cards-equipo y cards-testimonios */
+
+#nuevo .hero {
+    background-image: url(https://cyberdietoterapia.com/images/background-talento.jpg);
+}
+
+@media screen and (min-width: 992px) {
+    #nuevo .image {
+        background-image: url(https://cyberdietoterapia.com/images/img03.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #nuevo .image img {
+        visibility: hidden;
+    }
+}
+
+.quieres-trabajar ul li::before,
+.card-oferta ul li::before {
+    content: "❤ ";
+}
+
+.card-oferta {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 768px) {
+    .cards-ofertas {
+        column-gap: 2rem;
+    }
+
+    .card-oferta {
+        min-width: 34.4rem;
+        width: 49%;
+        max-width: 48.2rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .cards-ofertas {
+        width: 140rem;
+    }
+
+    .row3 .form {
+        max-width: 140rem;
+    }
+}
+
+/* Formularios */
+.form div {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: .8rem;
+}
+
+.form input,
+.form select,
+.form textarea {
+    font-size: 1.6rem;
+    width: 100%;
+    padding: .5rem;
+}
+
+@media screen and (min-width: 425px) {
+    .fila input[type="submit"] {
+        display: block;
+        width: 38.5rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nom-tel,
+    .mail-vacan {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nom-tel div,
+    .mail-vacan div {
+        min-width: 34.4rem;
+        width: 49%;
+        max-width: 48.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .row3 .form {
+        display: grid;
+    }
+
+    .fila {
+        padding: 0 calc((100vw - 1004px) / 3);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .fila {
+        padding: 0 14.5rem;
+    }
+}
+/* Fin Formularios */
