@@ -63,7 +63,9 @@ h4 {
     --bs-dropdown-bg: aliceblue;
 }
 
-
+.dropdown-toggle::after {
+    color: aliceblue;
+}
 
 .navbar>.container-fluid {
     justify-content: flex-end;
@@ -76,6 +78,11 @@ h4 {
     border: 2px solid #000000;
 }
 
+@media screen and (min-width: 768px) {
+    .nav-link {
+        display: inline-block;
+    }
+}
 
 .offcanvas {
     --bs-offcanvas-width: 200px;
